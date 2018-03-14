@@ -1,15 +1,56 @@
 body{
     background-color: aliceblue;
+    height: 100%;
+    margin: 0;
+    display: gird;
+    grid-template-columns: 100%;
 }
 
-header{
-    background-color: deeppink;
+nav a{
+    float: right;
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
+#home{
+    float:left
+}
+
+
+#cover{
+    background-image: url("images\\cover.jpg");
+    background-color: steelblue; 
+    background-position: center;
+    width: auto;
+    height:50rem;
+    text-align: center;
+    background-repeat:no-repeat;
+    background-size:cover; 
+
+}
+header img{
+    object-fit: cover;
+}
+
+ header h1{
+    color: whitesmoke;
+    position: relative; 
+    float: left;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 3em;  
+
+ }
 #skills{
 
 }
 
+#projects-heading{
+    text-align: center;
+}
 
 #projects{
     display: grid;
@@ -78,11 +119,6 @@ header{
        
 }
 
-h1{
-    color:grey;
-}
-nav-wrapper{
-}
 
 i{
     font-size: 3em;
