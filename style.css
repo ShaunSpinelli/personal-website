@@ -27,14 +27,16 @@ nav a{
     height:50rem;
     text-align: center;
     background-repeat:no-repeat;
-    background-size:cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 
 }
 header img{
     object-fit: cover;
 }
 
- header h1{
+header h1{
     color: whitesmoke;
     position: relative; 
     float: left;
@@ -65,7 +67,6 @@ header img{
     padding: 1em;
     padding-left: 20%;
     padding-right: 20%;
-
 
 }
 .single-project img{
@@ -133,3 +134,23 @@ i:hover{
 footer p{
     text-align: center
 }
+
+/* 600px or less */
+@media screen and (max-width: 420px){
+
+    #cover{
+        background-attachment: scroll;
+        height: 25em;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    #projects-heading{
+        font-size: 1em;
+    }
+}
+
+
+    
