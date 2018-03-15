@@ -13,7 +13,16 @@ nav a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: all 0.4s;
+    border-radius: 0.5em
 }
+
+nav a:hover{
+    background-color: rgba(0, 255, 255, 0.103);
+    color: greenyellow;
+
+}
+
 #home{
     float:left
 }
@@ -25,11 +34,11 @@ nav a{
     background-position: center;
     width: auto;
     height:50rem;
-    text-align: center;
     background-repeat:no-repeat;
     background-attachment: fixed;   
     background-position: center;
     background-size: cover;
+
 
 }
 header img{
@@ -41,8 +50,8 @@ header h1{
     position: relative; 
     float: left;
     top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    left: 45%;
+    transform: translate(-45%, -30%);
     font-size: 3em;  
 
  }
@@ -54,10 +63,8 @@ header h1{
 
 #projects{
     display: grid;
-    /* grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) ); */
     grid-template-columns: 100%;
     padding: 1em;
-    /* background-color: darkblue; */
     grid-gap: 1em;
 }
 
@@ -70,12 +77,8 @@ header h1{
 #projects-display{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) )
-    /* display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; */
 }
 .single-project{
-    background-color: lightblue;
     padding: 1em;
     padding-left: 20%;
     padding-right: 20%;
@@ -141,6 +144,7 @@ i{
 
 i:hover{
     color:greenyellow;
+
 }
 
 footer p{
@@ -155,7 +159,15 @@ footer p{
         height: 25em;
     }
 
+    nav a{
+
+    }
+
     header h1{
+        position: relative; 
+        float: left;
+        top: 47%;
+        left: 45%;
         font-size: 2em;
     }
 
