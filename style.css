@@ -27,7 +27,7 @@ nav a{
     height:50rem;
     text-align: center;
     background-repeat:no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;   
     background-position: center;
     background-size: cover;
 
@@ -50,20 +50,32 @@ header h1{
 
 }
 
-#projects-heading{
-    text-align: center;
-}
+
 
 #projects{
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) );
+    /* grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) ); */
+    grid-template-columns: 100%;
     padding: 1em;
     /* background-color: darkblue; */
     grid-gap: 1em;
 }
 
+#projects-heading{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#projects-display{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) )
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+}
 .single-project{
-    /* background-color: lightblue; */
+    background-color: lightblue;
     padding: 1em;
     padding-left: 20%;
     padding-right: 20%;
@@ -98,7 +110,7 @@ header h1{
     /* background-color: green; */
     padding: 1em;
     grid-gap: 1em;
-    height: 400px
+    height: 350px
 
 }
 
@@ -136,7 +148,7 @@ footer p{
 }
 
 /* 600px or less */
-@media screen and (max-width: 420px){
+@media screen and (max-width: 500px){
 
     #cover{
         background-attachment: scroll;
@@ -150,6 +162,15 @@ footer p{
     #projects-heading{
         font-size: 1em;
     }
+
+    #skills{
+        height: 80%;
+    }
+
+    i{
+        font-size: 2em;
+    }
+
 }
 
 
