@@ -147,9 +147,22 @@ i:hover{
 
 }
 
+#social-links{
+    display:flex;
+    justify-content: center;
+}
+
+footer i{
+    font-size: 2em;
+    text-align: center;
+    color:rgb(16, 133, 241);
+    padding: 0.25em
+}
+
 footer p{
     text-align: center
 }
+
 
 /* 600px or less */
 @media screen and (max-width: 500px){
