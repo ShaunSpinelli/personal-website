@@ -4,6 +4,8 @@ body{
     margin: 0;
     display: gird;
     grid-template-columns: 100%;
+    
+
 }
 
 nav a{
@@ -32,7 +34,7 @@ header{
     background-color: steelblue; 
     background-position: center;
     width: 100%;
-    height:50rem;
+    height:45rem;
     background-repeat:no-repeat;
     background-attachment: fixed;   
     background-position: center;
@@ -54,6 +56,14 @@ header{
     font-size: 3em;
 }
 
+#skills{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) );
+    /* background-color: green; */
+    padding: 1em;
+    grid-gap: 1em;
+    height: 350px
+}
 
 #skills-brief img{
     max-width: 14em;
@@ -63,11 +73,27 @@ header{
     padding: 0.5em;
 }
 
+#skills-brief{   
+    /* padding: 1em; */
+    /* padding-top: 10em */
+    
+}
+
 #skills-brief p{
+    margin:0;
     font-size: 1.25em
 }
 
-
+#symbols-heading{
+    grid-column: span 3;
+    text-align: center;
+}
+#skills-symbols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.5em;
+    grid-gap: 0.1em;    
+}
 
 #projects{
     display: grid;
@@ -115,32 +141,8 @@ header{
     /*  background-color: gold */
 }
 
-#skills{
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) );
-    /* background-color: green; */
-    padding: 1em;
-    grid-gap: 1em;
-    height: 350px
 
-}
 
-#skills-breif{
-    /* background-color: fuchsia; */
-    padding: 1em;
-
-}
-
-#skills-breif p{
-    margin:0;
-}
-
-#skills-symbols{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1em;
-    grid-gap: 3em;    
-}
 
 
 i{
