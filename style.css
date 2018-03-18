@@ -5,6 +5,7 @@ body{
     display: gird;
     grid-template-columns: 100%;
     
+    
 
 }
 
@@ -108,6 +109,33 @@ header{
     grid-gap: 0.1em;    
 }
 
+.icon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon .icon-info {
+    visibility: hidden;
+    width: 3em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 2em;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 50%;
+    margin-left: -60px;    
+}
+
+.icon:hover .icon-info {
+    visibility: visible;
+}
+
+
+
 #projects{
     display: grid;
     grid-template-columns: 100%;
@@ -143,28 +171,41 @@ header{
 }
 
 .single-project img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px #0CCA4A;
 }
 
 .project-description{
     text-align: center
 }
 
-#blog{
+#articles{
     width: 100%;
     height: 20rem;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) )
+
 }
 
-.blog-display{
+.articles-display{
     background-color: #A4B8C4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
 
-.blog-display:nth-child(2) {
+.articles-display:nth-child(2) {
     background-color:#6E8387;
 }
 
+.articles-display i{
+    font-size: 10rem;
+    text-align: center;
+    padding: 0rem;
+    padding-top: 2rem;
+    color:rgb(58, 62, 66);
+    transition: all 0.4s;
+}
 
 
 i{
@@ -186,7 +227,7 @@ i:hover{
 }
 
 footer{
-    padding: 1em;
+    padding: 2em;
 }
 footer i{
     font-size: 2em;
@@ -251,10 +292,13 @@ footer p{
         font-size: 2em;
     }
 
-    #blog{
+    #articles{
         height: 50rem;
     }
 
+    footer{
+        padding: 1em;
+    }
 }
 
 
