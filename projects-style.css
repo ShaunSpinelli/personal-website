@@ -45,9 +45,6 @@ nav{
 
 }
 
-.single-project:nth-child(2){
-    
-}
 .project-heading{
     text-align: center;
     grid-column: span 2;

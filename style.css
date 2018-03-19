@@ -4,9 +4,6 @@ body{
     margin: 0;
     display: gird;
     grid-template-columns: 100%;
-    
-    
-
 }
 
 nav a{
@@ -23,22 +20,8 @@ nav a{
 nav a:hover{
     background-color: rgba(0, 255, 255, 0.103);
     color: greenyellow;
-
 }
 
-#social-icons{
-    text-align: center;
-    position: absolute;
-    float: left;
-    left: 38%;
-    
-}
-
-#social-icons i{
-    font-size: 2em;
-    color: white;
-    padding: 0;
-}
 
 #home{
     float:left;
@@ -54,7 +37,6 @@ header{
     background-attachment: fixed;   
     background-position: center;
     background-size: cover;
-
 }
 
 
@@ -70,6 +52,11 @@ header{
     transform: translate(-50%, -30%);
     font-size: 3em;
 }
+
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
 
 #skills{
     display: grid;
@@ -88,8 +75,7 @@ header{
 }
 
 #skills-brief{   
-    padding: 40px;
-    
+    padding: 40px;   
 }
 
 #skills-brief p{
@@ -101,6 +87,7 @@ header{
     grid-column: span 3;
     text-align: center;
 }
+
 #skills-symbols{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,7 +120,22 @@ header{
     visibility: visible;
 }
 
+i{
+    font-size: 3em;
+    text-align: center;
+    color:rgb(16, 133, 241);
+    transition: all 0.4s;
+    
+}
 
+i:hover{
+    color:#0CCA4A;
+
+}
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
 
 #projects{
     display: grid;
@@ -177,6 +179,10 @@ header{
     font-size: 1.3em;
 }
 
+/* ==========================================================================
+   Blog Section
+   ========================================================================== */
+
 #articles{
     width: 100%;
     height: 20rem;
@@ -207,23 +213,12 @@ header{
 }
 
 
-i{
-    font-size: 3em;
-    text-align: center;
-    color:rgb(16, 133, 241);
-    transition: all 0.4s;
-    
-}
 
-i:hover{
-    color:#0CCA4A;
 
-}
 
-#social-links{
-    display:flex;
-    justify-content: center;
-}
+/* ==========================================================================
+Footer
+========================================================================== */
 
 footer{
     padding: 2em;
@@ -236,6 +231,10 @@ footer i{
     transition: all 0.4s;
 }
 
+#social-links{
+    display:flex;
+    justify-content: center;
+}
 footer p{
     text-align: center
 }
