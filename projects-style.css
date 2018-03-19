@@ -23,8 +23,8 @@ nav a{
 }
 
 nav a:hover{
-    background-color: rgba(0, 255, 255, 0.103);
-    color: greenyellow;
+    background-color:rgba(16, 132, 241, 0.1);
+    color:#0CCA4A;
 
 }
 
@@ -64,16 +64,52 @@ nav{
     font-size: 1.25em;
 }
 
+
 .project-information h3{
     font-size: 1em
 }
 
 i{
-    font-size: 1.5em;
+    font-size: 1.75em;
     text-align: center;
     color:rgb(16, 133, 241);
     transition: all 0.4s;
     
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon .icon-info {
+    visibility: hidden;
+    width: 4.2em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5em;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 130%;
+}
+
+
+.icon .icon-info::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.icon:hover .icon-info {
+    visibility: visible;   
 }
 
 i:hover{
