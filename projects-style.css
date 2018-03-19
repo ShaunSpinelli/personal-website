@@ -41,6 +41,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr  1fr;
     padding-top: 2em;
+    padding-left: 2em
 
 }
 
@@ -58,6 +59,7 @@ nav{
     /* border: solid 3px black; */
     border-radius: 10px;
     box-shadow: 8px 8px 10px #7C7C7C;
+    
    
 }
 
