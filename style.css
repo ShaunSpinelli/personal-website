@@ -74,7 +74,6 @@ header{
 #skills{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) );
-    /* background-color: green; */
     padding: 1em;
     grid-gap: 1em;
     height: 350px
@@ -95,7 +94,7 @@ header{
 
 #skills-brief p{
     margin:0;
-    font-size: 1.25em
+    font-size: 1.25em;
 }
 
 #symbols-heading{
@@ -127,7 +126,7 @@ header{
     z-index: 1;
     top: 60%;
     left: 50%;
-    margin-left: -60px;    
+    margin-left: -60px;   
 }
 
 .icon:hover .icon-info {
@@ -163,11 +162,10 @@ header{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 200px;
 }
 
 .single-project img:hover {
@@ -242,7 +240,7 @@ footer p{
 }
 
 
-/* 600px or less */
+/* 650px or less */
 @media screen and (max-width: 650px){
 
     #cover{
@@ -251,7 +249,7 @@ footer p{
     }
 
     nav a{
-        padding: 14px 16px;
+        padding: 8px 12px;
     }
 
     header img{
