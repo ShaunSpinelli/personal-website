@@ -4,6 +4,7 @@ body{
     margin: 0;
     display: gird;
     grid-template-columns: 100%;
+    font-family: 'Old Standard TT', serif;
 }
 
 nav a{
@@ -15,6 +16,7 @@ nav a{
     font-size: 17px;
     transition: all 0.4s;
     border-radius: 0.5em;
+    font-weight: bold;
 }
 
 nav a:hover{
@@ -113,18 +115,19 @@ header{
     z-index: 1;
     top: 60%;
     left: 50%;
-    margin-left: -60px;   
+    margin-left: -60px;  
 }
 
 .icon:hover .icon-info {
     visibility: visible;
+    
 }
 
 i{
     font-size: 3em;
     text-align: center;
     color:rgb(16, 133, 241);
-    transition: all 0.4s;
+    transition: all 0.2s;
     
 }
 
@@ -228,7 +231,7 @@ footer i{
     text-align: center;
     color:#1085f1;
     padding: 0.25em;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 
 #social-links{

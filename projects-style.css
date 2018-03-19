@@ -4,6 +4,7 @@ body{
     margin: 0;
     display: gird;
     grid-template-columns: 100%;
+    font-family: 'Old Standard TT', serif;
     
     
 
@@ -11,14 +12,14 @@ body{
 
 nav a{
     float: right;
-    color: pink;
+    color: #1085f1;
     text-align: center;
     padding: 20px 50px;
     text-decoration: none;
     font-size: 17px;
     transition: all 0.4s;
     border-radius: 0.5em;
-    
+    font-weight: bold;
 }
 
 nav a:hover{
