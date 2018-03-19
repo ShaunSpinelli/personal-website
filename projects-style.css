@@ -49,6 +49,7 @@ nav{
 .project-heading{
     text-align: center;
     grid-column: span 2;
+    font-size: 1.75em;
 }
 
 .project-image img{
@@ -63,9 +64,12 @@ nav{
     font-size: 1.25em;
 }
 
+.project-information h3{
+    font-size: 1em
+}
 
 i{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     color:rgb(16, 133, 241);
     transition: all 0.4s;
